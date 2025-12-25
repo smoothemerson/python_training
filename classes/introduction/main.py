@@ -1,8 +1,23 @@
-numero_inteiro = 3
-print("Inteiro = ", numero_inteiro)
+soma = 1 + 1
+print("1 + 1 = ", soma)
 
-numero_real = 3.14
-print("Real com ponto flutuante = ", numero_real)
+subtracao = 1 - 1
+print("1 - 1 = ", subtracao)
 
-print("Tipo da variavel inteiro = ", type(numero_inteiro))
-print("Tipo da variavel real = ", type(numero_real))
+multiplicacao = 2 * 2
+print("2 x 2 = ", multiplicacao)
+
+divisao = 5 / 2
+print("5 / 2 = ", divisao)
+print("Tipo da variável do resultado da divisão = ", type(divisao))
+
+print("Valor em inteiro = ", int(divisao))
+
+print("Valor em float = ", float(divisao))
+
+modulo = 5 % 2
+print("Modulo = ", modulo)
+
+divisao = 5 // 2
+print("5 // 2 = ", divisao)
+print("Tipo da variável do resultado da divisão = ", type(divisao))
