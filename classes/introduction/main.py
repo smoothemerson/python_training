@@ -1,20 +1,8 @@
-if True:
-    print("Bloco IF vai ser executado")
+minha_lista = [1, 2, 3, 4, 5, "rocketseat", True, False]
 
-if True and True:
-    print("Bloco será executado")
-
-if True and False:
-    print("Bloco não será executado")
-
-if False and False:
-    print("Bloco não será executado")
-
-if True or False:
-    print("Bloco OR não vai ser executado")
-
-if False or False:
-    print("Bloco OR não não vai ser executado")
-
-if True or True:
-    print("Bloco OR vai ser executado")
+print("Minha lista de exemplo", minha_lista)
+print("minha_lista[0]:", minha_lista[0])
+print("minha_lista[5]:", minha_lista[5])
+print("minha_lista[1:7]:", minha_lista[1:7])
+print("minha_lista[:6]:", minha_lista[:6])
+print("minha_lista[2:]:", minha_lista[2:])
