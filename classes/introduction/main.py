@@ -1,12 +1,9 @@
-minha_tupla = (1, 2, 2, 3, 4)
+pessoa = {"nome": "João", "idade": 30, "cidade": "São Paulo"}
 
-print(minha_tupla)
-print("Minha tupla:", minha_tupla[0])
-print("Minha tupla:", minha_tupla[2])
-print("Minha tupla:", minha_tupla[-1])
+print("Meu dicionário de exemplo: ", pessoa)
+print("Nome:", pessoa["nome"])
+print("Idade:", pessoa["idade"])
+print("Cidade:", pessoa["cidade"])
 
-contagem = minha_tupla.count(2)
-print("Quantidade de vezes que o elemento 2 aparece:", contagem)
-
-indice = minha_tupla.index(3)
-print("Índice da primeira ocorrência do elemento 3:", indice)
+pessoa["sobrenome"] = "Silva"
+print("Sobrenome:", pessoa["sobrenome"])
