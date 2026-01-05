@@ -1,6 +1,5 @@
-idade = 19
+idade = int(input("Quantos anos você tem? "))
 
-print("Exemplo de comando if")
 if idade >= 18:
     print("Você é maior de idade.")
 elif idade >= 12:
@@ -8,9 +7,8 @@ elif idade >= 12:
 else:
     print("Você é menor de idade.")
 
-mensagem = (
+print(
     "Pode tirar a carteira de habilitação"
     if idade >= 18
     else "Não pode tirar a carteira de habilitação"
 )
-print(mensagem)
