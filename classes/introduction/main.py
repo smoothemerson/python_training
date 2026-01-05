@@ -1,24 +1,16 @@
-pessoa = {"nome": "João", "idade": 30, "cidade": "São Paulo"}
+idade = 19
 
-print("Meu dicionário de exemplo: ", pessoa)
-print("Nome:", pessoa["nome"])
-print("Idade:", pessoa["idade"])
-print("Cidade:", pessoa["cidade"])
+print("Exemplo de comando if")
+if idade >= 18:
+    print("Você é maior de idade.")
+elif idade >= 12:
+    print("Você é um adolescente")
+else:
+    print("Você é menor de idade.")
 
-pessoa["sobrenome"] = "Silva"
-print("Sobrenome:", pessoa["sobrenome"])
-
-pessoa["idade"] = 31
-print("Idade atualizada:", pessoa["idade"])
-
-del pessoa["cidade"]
-print("Dicionário após remover a cidade:", pessoa)
-
-chaves = list(pessoa.keys())
-print("Chaves do dicionário:", chaves)
-
-valores = list(pessoa.values())
-print("Valores do dicionário:", valores)
-
-itens = list(pessoa.items())
-print("Pares chave-valor do dicionário:", itens)
+mensagem = (
+    "Pode tirar a carteira de habilitação"
+    if idade >= 18
+    else "Não pode tirar a carteira de habilitação"
+)
+print(mensagem)
