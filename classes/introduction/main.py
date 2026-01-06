@@ -23,3 +23,23 @@ for valor in pessoa.values():
 print("\nFor utilizando dicionário - items")
 for chave, valor in pessoa.items():
     print(f"{chave}: {valor}")
+
+print("\nUtilizando a função range()")
+for numero in range(5):
+    print("\nNúmero: ", numero)
+
+print("\nUtilizando a função range() com len()")
+lista = [1, 2, 3, 4, 5, 6]
+print(lista)
+for indice in range(0, len(lista)):
+    if indice == 3:
+        lista[indice] = 5
+    else:
+        lista[indice] = 0
+print(lista)
+
+lista_enumerate = ["a", "b", "c"]
+for indice, valor in enumerate(lista_enumerate):
+    print(f"{indice}: {valor}")
+    if indice == 1:
+        print("Índice 1")
