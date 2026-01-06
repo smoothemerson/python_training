@@ -1,14 +1,25 @@
-idade = int(input("Quantos anos você tem? "))
+lista = [1, 2, 3, 4, 5]
 
-if idade >= 18:
-    print("Você é maior de idade.")
-elif idade >= 12:
-    print("Você é um adolescente")
-else:
-    print("Você é menor de idade.")
+print("For utilizando lista")
+for elemento in lista:
+    print(elemento)
 
-print(
-    "Pode tirar a carteira de habilitação"
-    if idade >= 18
-    else "Não pode tirar a carteira de habilitação"
-)
+tupla = (1, 2, 3, 4, 5)
+
+print("\nFor utilizando tupla")
+for elemento in tupla:
+    print(elemento)
+
+pessoa = {"nome": "João", "idade": 30, "cidade": "São Paulo"}
+
+print("\nFor utilizando dicionário - chaves")
+for chave in pessoa.keys():
+    print(chave)
+
+print("\nFor utilizando dicionário - valores")
+for valor in pessoa.values():
+    print(valor)
+
+print("\nFor utilizando dicionário - items")
+for chave, valor in pessoa.items():
+    print(f"{chave}: {valor}")
