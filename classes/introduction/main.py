@@ -1,45 +1,15 @@
-lista = [1, 2, 3, 4, 5]
+while True:
+    print("\nMenu do Gerenciador de Lista de tarefas:")
+    print("1. Adicionar tarefa")
+    print("2. Ver tarefas")
+    print("3. Atualizar tarefa")
+    print("4. Completar tarefa")
+    print("5. Deletar tarefas completadas")
+    print("6. Sair")
 
-print("For utilizando lista")
-for elemento in lista:
-    print(elemento)
+    escolha = input("Digite sua escolha: ")
 
-tupla = (1, 2, 3, 4, 5)
+    if escolha == "6":
+        break
 
-print("\nFor utilizando tupla")
-for elemento in tupla:
-    print(elemento)
-
-pessoa = {"nome": "João", "idade": 30, "cidade": "São Paulo"}
-
-print("\nFor utilizando dicionário - chaves")
-for chave in pessoa.keys():
-    print(chave)
-
-print("\nFor utilizando dicionário - valores")
-for valor in pessoa.values():
-    print(valor)
-
-print("\nFor utilizando dicionário - items")
-for chave, valor in pessoa.items():
-    print(f"{chave}: {valor}")
-
-print("\nUtilizando a função range()")
-for numero in range(5):
-    print("\nNúmero: ", numero)
-
-print("\nUtilizando a função range() com len()")
-lista = [1, 2, 3, 4, 5, 6]
-print(lista)
-for indice in range(0, len(lista)):
-    if indice == 3:
-        lista[indice] = 5
-    else:
-        lista[indice] = 0
-print(lista)
-
-lista_enumerate = ["a", "b", "c"]
-for indice, valor in enumerate(lista_enumerate):
-    print(f"{indice}: {valor}")
-    if indice == 1:
-        print("Índice 1")
+print("Programa finalizado")
